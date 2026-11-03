@@ -1,0 +1,13 @@
+{
+  "name": "okzest",
+  "owner": { "name": "OKZest", "url": "https://okzest.com" },
+  "metadata": { "description": "Official OKZest plugins for Claude Code." },
+  "plugins": [
+    {
+      "name": "okzest",
+      "source": "./",
+      "description": "Personalised image templates for email, social and automation, through the OKZest MCP server.",
+      "homepage": "https://okzest.com"
+    }
+  ]
+}

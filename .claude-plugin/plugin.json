@@ -1,0 +1,10 @@
+{
+  "name": "okzest",
+  "version": "0.1.0",
+  "description": "Personalised image templates for email, social and automation, through the OKZest MCP server.",
+  "author": { "name": "OKZest", "url": "https://okzest.com" },
+  "homepage": "https://okzest.com",
+  "repository": "https://github.com/KevinUK/okzest-skill",
+  "license": "MIT",
+  "keywords": ["okzest", "images", "personalisation", "email", "social", "mcp"]
+}

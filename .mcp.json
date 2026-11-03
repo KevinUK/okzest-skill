@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "okzest": {
+      "type": "http",
+      "url": "https://api.okzest.com/mcp",
+      "headers": { "x-api-key": "${OKZEST_API_KEY}" }
+    }
+  }
+}
