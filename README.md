@@ -33,6 +33,7 @@ If the OKZest tools do not appear, add the connection by hand. The endpoint is `
 - **Format.** Previews come back as JPEG by default (PNG when the background is transparent). You can ask for PNG or WebP.
 - **Preview links expire.** A preview URL works for a short time. The image URL for a saved template does not, so use that one in emails.
 - **The Free plan is badged.** Images from a Free plan account carry a small "Made with OKZest" badge, and the Free allowance is 500 images; after that they stop showing until the account upgrades. See [okzest.com/pricing](https://okzest.com/pricing) for plan details.
+- **Also have OKZest in claude.ai?** Claude Code treats the plugin and the claude.ai OKZest connector as the same server. If the connector is switched on but not authorised, neither one loads and you get no OKZest tools. Authorise the connector or switch it off in your claude.ai connector settings, then restart Claude Code.
 
 ## Links
 
