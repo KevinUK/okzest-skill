@@ -1,28 +1,48 @@
-# OKZest plugin for Claude Code
+# OKZest for Claude
 
-Personalised image templates for email, social and automation, through the OKZest MCP server. OKZest is a template tool, not an AI image generator.
+Design one template, then get a personalised image URL for each recipient, straight from Claude.
 
-> STUB: final copy comes from OKZ-605.
+This plugin adds the OKZest skill and connects Claude to the OKZest tools. Ask for an email header with a first name, a social quote card, or one image per person on a mailing list, and Claude builds the template and gives you the image URLs.
+
+OKZest is a template tool, not an AI image generator. It places the text and images you give it onto a canvas. It does not make pictures from a description, so use it for the images you need in many versions, not for artwork.
+
+## What you can ask for
+
+- "Make a welcome email header for Jane with her photo."
+- "Make a quote card for this line in our brand colours."
+- "Make versions of that header for Jane, Raj and Mei."
 
 ## Install
+
+You need Claude Code and an OKZest account. No account yet: [sign up at okzest.com](https://okzest.com/?utm_source=claude-skill&utm_medium=plugin&utm_campaign=okz337).
 
 ```
 claude plugin marketplace add KevinUK/okzest-skill
 claude plugin install okzest@okzest
 ```
 
-## Set your key
-
-Create an API key at Settings, API Keys on https://okzest.com and set it before starting Claude Code:
+Then get an API key at Settings, then API Keys, in your OKZest account, and set it:
 
 ```
-export OKZEST_API_KEY=your-key
+export OKZEST_API_KEY=your-key-here
 ```
 
-## Fallback without the plugin's MCP config
+Restart Claude Code and ask for an image. Keep the key out of chat; the plugin reads it from the environment.
 
-```
-claude mcp add --transport http okzest https://api.okzest.com/mcp --header "x-api-key: $OKZEST_API_KEY"
-```
+If the OKZest tools do not appear, add the connection by hand. The endpoint is `https://api.okzest.com/mcp` and the key goes in the `x-api-key` header.
 
-More: https://docs.okzest.com and https://okzest.com
+## Good to know
+
+- **Fonts.** Claude picks fonts from the OKZest font list. Uploaded fonts belong to one project, so on an account with several projects Claude needs to know which one.
+- **Format.** Previews come back as JPEG by default (PNG when the background is transparent). You can ask for PNG or WebP.
+- **Preview links expire.** A preview URL works for a short time. The image URL for a saved template does not, so use that one in emails.
+- **The Free plan is badged.** Images from a Free plan account carry a small "Made with OKZest" badge, and the Free allowance is 500 images; after that they stop showing until the account upgrades. See [okzest.com/pricing](https://okzest.com/pricing) for plan details.
+
+## Links
+
+- OKZest: https://okzest.com
+- Docs: https://docs.okzest.com
+
+## Licence
+
+See `LICENSE`.
