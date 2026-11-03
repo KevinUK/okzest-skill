@@ -2,6 +2,7 @@
   "name": "okzest",
   "version": "0.1.0",
   "description": "Personalised image templates for email, social and automation, through the OKZest MCP server.",
+  "icon": "./assets/icon.png",
   "author": {
     "name": "OKZest",
     "url": "https://okzest.com"
