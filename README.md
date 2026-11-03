@@ -21,13 +21,9 @@ claude plugin marketplace add KevinUK/okzest-skill
 claude plugin install okzest@okzest
 ```
 
-Then get an API key at Settings, then API Keys, in your OKZest account, and set it:
+Get an API key at Settings, then API Keys, in your OKZest account. Claude Code asks for it (masked) when the plugin is enabled. To change it later, reconfigure the plugin in `/plugin`. Keep the key out of chat.
 
-```
-export OKZEST_API_KEY=your-key-here
-```
-
-Restart Claude Code and ask for an image. Keep the key out of chat; the plugin reads it from the environment.
+Then ask for an image.
 
 If the OKZest tools do not appear, add the connection by hand. The endpoint is `https://api.okzest.com/mcp` and the key goes in the `x-api-key` header.
 
