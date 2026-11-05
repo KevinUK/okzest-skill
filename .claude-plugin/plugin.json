@@ -11,6 +11,15 @@
   "privacyPolicyUrl": "https://okzest.com/privacy",
   "repository": "https://github.com/KevinUK/okzest-skill",
   "license": "MIT",
+  "userConfig": {
+    "okzest_api_key": {
+      "type": "string",
+      "title": "OKZest API key",
+      "description": "Create one at okzest.com under Settings, API Keys",
+      "required": true,
+      "sensitive": true
+    }
+  },
   "keywords": [
     "okzest",
     "images",

@@ -28,7 +28,7 @@ OKZest is a template tool, not an AI image generator. It places text and images 
 Before anything else, check that the OKZest tools are available (`list_designs`, `list_projects`, `create_design` and so on). If they are not, tell the user two steps:
 
 1. Get an API key at Settings, then API Keys, in your OKZest account. No account yet: https://okzest.com/?utm_source=claude-skill&utm_medium=plugin&utm_campaign=okz337
-2. Set it as the `OKZEST_API_KEY` environment variable, then restart Claude Code.
+2. Enter the key when Claude Code asks for it, or reconfigure the plugin in `/plugin`.
 
 Never ask the user to paste the key into chat.
 
