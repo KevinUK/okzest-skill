@@ -3,7 +3,7 @@
     "okzest": {
       "type": "http",
       "url": "https://api.okzest.com/mcp",
-      "headers": { "x-api-key": "${OKZEST_API_KEY}" }
+      "headers": { "x-api-key": "${user_config.okzest_api_key}" }
     }
   }
 }
