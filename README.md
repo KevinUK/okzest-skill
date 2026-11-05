@@ -40,6 +40,12 @@ If the OKZest tools do not appear, add the connection by hand. The endpoint is `
 - OKZest: https://okzest.com
 - Docs: https://docs.okzest.com
 
+## Support
+
+- Support: https://okzest.com/contact
+- Terms of service: https://okzest.com/terms
+- Privacy policy: https://okzest.com/privacy
+
 ## Licence
 
 See `LICENSE`.

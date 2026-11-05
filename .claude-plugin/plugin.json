@@ -8,7 +8,9 @@
     "url": "https://okzest.com"
   },
   "homepage": "https://okzest.com",
+  "supportUrl": "https://okzest.com/contact",
   "privacyPolicyUrl": "https://okzest.com/privacy",
+  "termsOfServiceUrl": "https://okzest.com/terms",
   "repository": "https://github.com/KevinUK/okzest-skill",
   "license": "MIT",
   "userConfig": {
