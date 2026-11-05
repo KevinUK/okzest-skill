@@ -14,7 +14,7 @@ OKZest is a template tool, not an AI image generator. It places the text and ima
 
 ## Install
 
-You need Claude Code and an OKZest account. No account yet: [sign up at okzest.com](https://okzest.com/?utm_source=claude-skill&utm_medium=plugin&utm_campaign=okz337).
+You need Claude Code and an OKZest account. No account yet: [sign up at okzest.com](https://okzest.com/?utm_source=claude-skill&utm_medium=plugin&utm_campaign=claude-plugin-launch).
 
 ```
 claude plugin marketplace add KevinUK/okzest-skill
