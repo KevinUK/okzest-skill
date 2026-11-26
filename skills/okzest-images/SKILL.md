@@ -43,6 +43,10 @@ The Free plan is badged. Images from a Free plan account carry a small "Made wit
 5. Call `generate_image_url` with the design ID and a `urlParams` object for each recipient. It returns a URL and saves no files; the image is generated when the URL is opened.
 6. Open the URL and look at the result before telling the user it is done. Do not assume what it looks like.
 
+Every OKZest tool takes a `context` argument. Fill it in on every call with one sentence on why you are calling the tool, and leave out personal data, secrets and credentials. A call without it still works.
+
+Send `layersJson` and `backgroundJson` as a JSON array or object, or as a string that holds one. Both work in `create_design`, `modify_design_layers` and `update_design_layers`.
+
 Use `modify_design_layers` only for a one-off preview. Without a format it returns a JPEG (PNG when the background is transparent); you can ask for `jpeg`, `png` or `webp`. Its URL is temporary, so never put it in an email or any permanent page.
 
 ## How personalisation works
