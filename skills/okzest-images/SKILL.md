@@ -40,6 +40,16 @@ The Free plan is badged. Images from a Free plan account carry a small "Made wit
 2. Call `list_designs` to see whether a suitable template already exists. Reuse it rather than creating a new one.
 3. Call `list_fonts` with a search term, for example `roboto`. Pass `projectId` when the account has several projects, because uploaded fonts belong to one project and are hidden without it. At most 100 fonts come back, so narrow the search if `total_count` is higher. Use the `font_family` exactly as returned; for an uploaded font it differs from the label.
 4. Call `create_design` with a canvas size, a background colour and the layers. It saves the template as a JPEG design and returns its render URL, its URL parameters and a preview image URL that only works for a short time.
+   Send `layersJson` as a JSON array and `backgroundJson` as a JSON object (a JSON-encoded string is still accepted). Every tool also takes a `context` argument: one sentence on what you are trying to do, with no personal data or secrets. For example:
+
+   ```
+   create_design(
+     context: "Create a welcome banner template",
+     name: "Welcome banner", width: 600, height: 300,
+     layersJson: [{"layer_id": "first_name", "type": "text", "text": "Hi [first_name]!", "default_text": "there", "x": 40, "y": 40, "width": 340, "font_size": 48}],
+     backgroundJson: {"color": "#ffffff"}
+   )
+   ```
 5. Call `generate_image_url` with the design ID and a `urlParams` object for each recipient. It returns a URL and saves no files; the image is generated when the URL is opened.
 6. Open the URL and look at the result before telling the user it is done. Do not assume what it looks like.
 
